@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/util.css">
+    <title>Blog Website</title>
+    <style>
+        .article {
+            display: none;
+        }
+
+        .article.visible {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto my-2">
+        <div class="nav-left">
+            <span>IBlog</span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="C:\Users\HP\Desktop\CodeClause_webDev\Code_clause\Blog_website\Contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="C:\Users\HP\Desktop\CodeClause_webDev\Code_clause\Blog_website\Search.html" method="get">
+                <input class="form-input" type="text" placeholder="Article Search" name="query">
+                <button class="btn">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="content max-width-1 m-auto my-2">
+        <div class="content-left m-auto">
+            <h1>The <span>Heaven</span> for Bloggers</h1>
+            <p>iBlog is a website lets you submit an article which upon approval will be up on out website and you can
+                get a good amount of reach time. </p>
+        </div>
+        <div class="content-right">
+            <img src="Images/img-1.svg" alt="img-1">
+        </div>
+    </div>
+    <div class="max-width-1 m-auto ">
+        <hr>
+    </div>
+    <div class="home-articles max-width-1 m-auto font1 my-2">
+        <h2>Featured Articles</h2>
+        <label for="category-select">Choose a category: </label>
+        <select id="category-select" onchange="filterArticles()">
+            <option value="all">All</option>
+            <option value="technology">Technology</option>
+            <option value="health">Health</option>
+            <option value="education">Education</option>
+
+        </select>
+        <div class="articles">
+            <div class="home-article article" data-category="technology">
+                <div class="home-article-img">
+                    <img src="Images/article_2.jpg" alt="Article1">
+                </div>
+
+                <div class="home-article-content font1" data-category="technology">
+                    <h3>Top websites that every software developers should know.</h3>
+                    <span>Suryansh Agrawal</span>
+                    <span>Date: </span><span>07 January 2024</span>
+                </div>
+            </div>
+
+            <div class="home-article article" data-category="health">
+                <div class="home-article-img">
+                    <img src="Images/article_3.jpg" alt="Article1">
+                </div>
+
+                <div class="home-article-content font1 ">
+                    <h3>Covid vaccine Side effects</h3>
+                    <span>Vishal Gupta</span>
+                    <span>Date: </span><span>21 January 2024</span>
+                </div>
+            </div>
+
+            <div class="home-article article" data-category="education">
+                <div class="home-article-img">
+                    <img src="Images/article_1.jpg" alt="Article1">
+                </div>
+
+                <div class="home-article-content font1">
+                    <h3>New Policy for Education System</h3>
+                    <span>Kashish Saini</span>
+                    <span>Date: </span><span>15 February 2024</span>
+                </div>
+            </div>
+
+            <div class="home-article article" data-category="Education">
+                <div class="home-article-img">
+                    <img src="Images/article_4.jpg" alt="Article1">
+                </div>
+
+                <div class="home-article-content font1 ">
+                    <h3>The Future of Online Learning effects</h3>
+                    <span>Juhi pal</span>
+                    <span>Date: </span><span>06 March</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer  m-auto">
+        Copyright &copy;<br>
+        Credits: Vecteezy
+    </div>
+    <script src="scrit.js"></script>
+</body>
+
+</html>

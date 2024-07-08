@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* .article{
+    display: none;
+}
+.article.visible{
+    display: block;
+} */
+.navigation {
+    height: 100px;
+    
+    font-family: var(--font2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    font-size: 30px;
+    display: flex;
+    
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 20px;
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font1);
+    
+}
+.nav-left ul li a:hover{
+    color: var(--main-bg-color);
+    font-weight: bolder;
+    border: 2px solid var(--main-bg-color);
+    border-radius: 10px;
+    padding: 4px;
+
+}
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease-in;
+
+}
+
+
+
+.content {
+    height: 340px;
+    display: flex;
+    /* background-color: aquamarine; */
+    padding: 15px;
+}
+
+.content-left {
+    font-family: var(--font1);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.content-left h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.content-left h1 span{
+    border: 2px solid brown;
+    background-color: brown;
+    color: white;
+    padding: 2px;
+}
+
+.content-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-right img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.home-articles{
+    /* display: flex; */
+    margin-top: 23px;
+    padding: 16px 20px;
+}
+
+.home-articles h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+
+.home-article{
+   display: flex;
+   width: 1000px;
+   height: 200px;
+   margin: 25px 10px;
+   padding: 20px 15px;
+    border: 2px solid rgba(128, 128, 128, 0.263);
+    border-radius: 5px;
+    
+}
+
+.home-article-img{
+    
+    width: 100px;
+    height: 100px;
+}
+.home-article-img img{
+    width: 100%;
+    height: 100%;
+}
+.home-article-content{
+    align-self: center;
+    width: 400px;
+    padding: 25px;
+   
+}
+.footer {
+    height: 50px;
+    color: white;
+    background-color: rgb(66, 13, 13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home-article span{
+    font-family: font2;
+}
